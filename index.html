@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="contain">
+        <h1>Quiz App</h1>
+        <div class="card">
+            <h2 class="card-title">Cricket</h2>
+            <img src="cricke.jpeg" alt="Cricket">
+            <button value="Cricket" id="start-button" class="start-button">Start Quiz</button>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Bollywood</h2>
+            <img src="bollywood.jpeg" alt="Bollywood">
+            <button value="Bollywood" id="start-button" class="start-button">Start Quiz</button>
+        </div>
+        <div class="card">
+            <h2 class="card-title">World</h2>
+            <img src="world.jpeg" alt="World">
+            <button value="World" id="start-button" class="start-button">Start Quiz</button>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Movies</h2>
+            <img src="movies.jpeg" alt="Movies">
+            <button value="Movies" id="start-button" class="start-button">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+        <h1 id="title"></h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <span id="timer" class="timer"></span>
+            <ul id="options">
+                <!-- Options with radio buttons -->
+                
+            </ul>
+        </div>
+        <div class="button-container">
+            <button id="prev-button" disabled>Previous</button>
+            <button id="next-button" disabled>Next</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h2>Quiz Results</h2>
+            <p id="score">Your score: <span id="correct-answers">0</span> out of 5</p>
+            <button id="start-again">Start Again</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
